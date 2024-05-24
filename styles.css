@@ -1,38 +1,77 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    text-align: center;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
 }
 
 header {
     background-color: #333;
     color: white;
-    padding: 20px 0;
+    padding: 1rem 0;
+    text-align: center;
 }
 
-h1 {
-    margin: 0;
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-main {
-    margin: 20px;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #555;
+nav ul li a {
     color: white;
+    text-decoration: none;
 }
 
-#message {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #333;
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.project {
+    background-color: white;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 1rem;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    width: 80%;
+    max-width: 500px;
+}
+
+form button {
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
